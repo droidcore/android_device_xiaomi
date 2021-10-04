@@ -13,3 +13,6 @@ ro.media.xml_variant.profiles=_cliffs_v0
 persist.vendor.sys.memplus.enable=false
 ro.vendor.qti.sys.fw.bg_apps_limit=30
 ro.vendor.qti.sys.fw.bservice_limit=60
+
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
