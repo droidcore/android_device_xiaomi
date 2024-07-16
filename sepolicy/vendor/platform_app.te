@@ -1,5 +1,8 @@
 allow platform_app app_data_file:file execute;
+<<<<<<< HEAD
 allow platform_app vendor_file:file { read open getattr map execute watch };
+=======
+>>>>>>> 436014b (peridot: Import Miui Camera)
 
 binder_call(platform_app, hal_camera_default)
 
@@ -11,6 +14,7 @@ get_prop(platform_app, vendor_panel_info_prop)
 # Camera
 allow platform_app app_data_file:file execute;
 allow platform_app hal_aidlbgservice_service:service_manager find;
+<<<<<<< HEAD
 allow platform_app hal_camera_mivi_hwservice:hwservice_manager find;
 allow platform_app app_data_file:file execute;
 allow platform_app hal_aidlbgservice_service:service_manager find;
@@ -18,11 +22,14 @@ allow platform_app vendor_audio_prop:file { open read getattr };
 allow platform_app vendor_camera_p3enable_prop:file { read map };
 allow platform_app vendor_audio_prop:file { getattr };
 allow platform_app vendor_displayfeature_prop:file map;
+=======
+>>>>>>> 436014b (peridot: Import Miui Camera)
 
 binder_call(platform_app, hal_camera_default)
 
 get_prop(platform_app, vendor_audio_prop)
 get_prop(platform_app, vendor_camera_prop)
+<<<<<<< HEAD
 get_prop(platform_app, vendor_camera_sensor_prop)
 get_prop(platform_app, vendor_fp_prop)
 get_prop(platform_app, vendor_display_prop)
@@ -42,3 +49,8 @@ allow platform_app vendor_file:file { read open getattr map execute watch };
 
 # we don't have google battery support, add dummy domain and let it return null by selinux denial
 dontaudit platform_app hal_dummy_googlebattery_service:service_manager find;
+=======
+get_prop(platform_app, vendor_fp_prop)
+get_prop(platform_app, vendor_display_prop)
+get_prop(platform_app, vendor_panel_info_prop)
+>>>>>>> 436014b (peridot: Import Miui Camera)

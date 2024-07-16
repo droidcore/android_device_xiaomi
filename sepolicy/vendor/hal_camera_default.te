@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 allow hal_camera_default system_data_file:dir search;
 allow hal_camera_default vendor_soc_id_prop:file getattr;
 binder_call(hal_camera_default, platform_app)
+=======
+binder_call(hal_camera_default, platform_app)
+allow hal_camera_default system_data_file:dir search;
+>>>>>>> 436014b (peridot: Import Miui Camera)
