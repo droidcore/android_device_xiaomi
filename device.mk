@@ -340,6 +340,10 @@ PRODUCT_COPY_FILES += \
 
 TARGET_PROVIDES_POWERHAL := true
 
+
+# Privapp permissions
+PRODUCT_PROPERTY_OVERRIDES += ro.control_privapp_permissions=log
+
 # QMI
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti_vendor # Needed by CNE app
