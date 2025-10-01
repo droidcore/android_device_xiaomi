@@ -259,6 +259,18 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libbinder_shim.so')
         .add_needed('libhidlbase_shim.so'),
+        
+        'odm/lib64/libmibokeh_845_video.so': blob_fixup()
+        .add_needed('libwrapper_dlengine.so'),
+
+    (
+        'odm/lib64/camera/components/com.mi.node.mawsaliency.so',
+        'odm/lib64/camera/components/com.mi.node.dlengine.so',
+        'odm/lib64/libwrapper_dlengine.so',
+    ): blob_fixup()
+        .add_needed(
+            'libwrapper_dlengine_shim.so'
+    ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
