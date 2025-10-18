@@ -175,6 +175,7 @@ TARGET_KERNEL_EXT_MODULES := \
 
 # MiuiCamera
 CAMERA_PACKAGE_NAME := com.android.camera
+-include device/xiaomi/peridot-miuicamera/BoardConfig.mk
 
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
