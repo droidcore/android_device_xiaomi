@@ -23,6 +23,32 @@ ro.vendor.qti.sys.fw.bservice_limit=60
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
+# Logging
+persist.vendor.camera.logInfoMask=false
+persist.log.tag.ACDB-LOADER=S
+persist.log.tag.CVP=S
+persist.log.tag.ResourcesCompat=S
+persist.log.tag.SYNX-UMD=S
+persist.log.tag.libsensor-parseRGB=S
+persist.log.tag.PowerUI=S
+persist.log.tag.BackgroundInstallControlService=S
+persist.log.tag.HWUI=S
+persist.log.tag.NetworkStack=S
+persist.log.tag.ConnectivityService=S
+persist.log.tag.Bluetooth=S
+persist.log.tag.btif=S
+persist.log.tag.bluetooth_sco=S
+persist.log.tag.SensorService=S
+persist.log.tag.SensorManager=S
+persist.log.tag.PowerManagerService=S
+persist.log.tag.BatteryService=S
+persist.log.tag.SystemServer=S
+persist.log.tag.AppOps=S
+
+# Other Options
+persist.sys.cust.lte_config=true
+persist.rcs.supported=1
+
 # Feature flags
 persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
@@ -31,6 +57,9 @@ persist.rcs.supported=1
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
 persist.vendor.vonr_setting_support=1
+
+# LMK
+ro.config.low_ram=false
 
 # RIL Powersaving
 persist.radio.add_power_save=1 
