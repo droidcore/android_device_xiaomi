@@ -41,6 +41,9 @@ vendor.audio_hal.period_size=192
 vendor.qc2audio.per_frame.flac.dec.enabled=true
 vendor.qc2audio.suspend.enabled=true
 
+# Adaptive Suspend
+suspend.short_suspend_threshold_millis=5000
+
 # Bluetooth
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.asha.central.enabled=true
@@ -113,7 +116,10 @@ persist.backup.ntpServer=0.pool.ntp.org
 # Graphics
 debug.angle.feature_overrides_enabled=preferLinearFilterForYUV:mapUnspecifiedColorSpaceToPassThrough
 debug.egl.hw=0
+debug.renderengine.backend=skiavkthreaded
 debug.sf.auto_latch_unsignaled=0
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.skia_use_perfetto_track_events=false
 debug.sf.disable_client_composition_cache=0
 debug.sf.early.app.duration=16600000
 debug.sf.early.sf.duration=16600000
@@ -127,6 +133,8 @@ debug.sf.late.app.duration=16600000
 debug.sf.late.sf.duration=10500000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.region_sampling_timer_timeout_ns=200000000
+debug.sf.region_sampling_period_ns=200000000
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.defer_refresh_rate_when_off=1
 graphics.gpu.profiler.support=true
@@ -154,6 +162,7 @@ ro.surface_flinger.support_kernel_idle_timer=true
 vendor.display.comp_mask=0
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
+vendor.display.disable_system_load_check=1
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_get_screen_decorator_support=1
@@ -175,6 +184,7 @@ vendor.display.scaling_source_opt_mode=4
 vendor.display.vds_allow_hwc=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.enable_logs=0
+ro.config.avoid_gfx_accel=true
 ro.surface_flinger.support_kernel_idle_timer=true
 
 # IMS
