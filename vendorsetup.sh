@@ -29,6 +29,11 @@ echo "Cloning Custom Apps Settings tree..."
 rm -rf packages/apps/Settings
 git clone https://github.com/droidcore/packages_apps_Settings.git packages/apps/Settings
 
+# Packages Apps XiaomiDolby
+echo "Cloning XiaomiDolby tree..."
+rm -rf packages/apps/XiaomiDolby
+git clone -b lineage-23.0 https://github.com/lightbulb-box/android_packages_apps_XiaomiDolby packages/apps/XiaomiDolby
+
 # system sepolicy 
 echo "Cloning Custom system sepolicy tree..."
 rm -rf system/sepolicy
