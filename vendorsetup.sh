@@ -20,6 +20,16 @@ echo "Cloning hardware xiaomi source..."
 rm -rf hardware/xiaomi
 git clone -b lineage-23.0 https://github.com/lightbulb-box/hardware_xiaomi.git hardware/xiaomi
 
+# MiuiCamera device tree (fresh clone)
+echo "Cloning MiuiCamera device tree..."
+rm -rf device/xiaomi/peridot-miuicamera
+git clone https://github.com/Blazing-Forest/device_xiaomi_peridot-miuicamera.git device/xiaomi/peridot-miuicamera
+
+# MiuiCamera vendor tree (fresh clone)
+echo "Cloning MiuiCamera vendor tree..."
+rm -rf vendor/xiaomi/peridot-miuicamera
+git clone https://github.com/Blazing-Forest/vendor_xiaomi_peridot-miuicamera.git vendor/xiaomi/peridot-miuicamera
+
 # Xiaomi app (fresh clone)
 echo "Cloning xiaomipart device tree..."
 git clone https://github.com/GuidixX/packages_apps_XiaomiParts.git packages/apps/XiaomiParts
